@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.warning-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: transform 1s;
+}
+
+.warning {
+  width: 481px;
+  height: 314px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
+    0px 4px 16px rgba(51, 51, 51, 0.08);
+  border-radius: 8px;
+}
+.close {
+  border-radius: 100%;
+  background-color: #6e41e2;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+.message-icon {
+  width: fit-content;
+  margin: 0 auto;
+}
+.message {
+  margin: 1rem 0;
+}
+.message h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0.2rem;
+}
+
+.message p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0.2rem 0 0.8rem 0;
+}
+.message h1,
+.message p {
+  font-style: normal;
+  text-align: center;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  width: 84px;
+  height: 44px;
+  background: #6e41e2;
+  border-radius: 4px;
+  flex-grow: 0;
+  color: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cancel-button {
+  width: 103px;
+  height: 44px;
+  border: 2px solid #6e41e2;
+  border-radius: 4px;
+  color: #6e41e2;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  background: transparent;
+}
+#warning-container:target {
+  transform: translate(-50%, 0%);
+}
+.modal-active {
+  transform: translate(-50%, 0%);
+}
+
+/* Botones para abrir los modales */
+.open-button {
+  background: orange;
+}

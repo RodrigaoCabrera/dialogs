@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialogs</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    
+  </head>
+  <body>
+    <section class="dialogs-main">
+      <div class="modal warning-container" id="warning-container">
+        <div class="dialog warning">
+          <button class="close close-button">X</button>
+          <div class="message-icon">
+            <img src="/assets/warning.svg" alt="Message icon" />
+          </div>
+          <article class="message">
+            <h1>¡Cuidado!</h1>
+            <p>No podrás volver atras</p>
+          </article>
+          <section class="action-buttons">
+            <button class="btn delete-button">Borrar</button>
+            <button class="cancel-button close-button">Cancelar</button>
+          </section>
+        </div>
+      </div>
+      <div class="dialog"></div>
+      <div class="dialog"></div>
+    </section>
+    <section class="open-modals">
+      <button class="btn open-button open-warning">Open warning</button>
+    </section>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
