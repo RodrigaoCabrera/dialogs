@@ -95,11 +95,29 @@ button {
 #warning-container:target {
   transform: translate(-50%, 0%);
 }
-.modal-active {
+.warning-container.modal-active {
   transform: translate(-50%, 0%);
 }
 
 /* Botones para abrir los modales */
 .open-button {
   background: orange;
+}
+
+.open-succes{
+  background: green;
+}
+
+
+/* Modal success */
+.success-container{
+  position: absolute;
+  transform: translate(-100%, 0%);
+  transition: transform 1s;
+}
+.success-container.modal-active{
+  transform: translate(56%, 0%);
+}
+.cerrar-button{
+  width: 145px;
 }
