@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
-.warning-container {
+.warning-container{
   position: absolute;
   left: 50%;
   transform: translate(-50%, -100%);
   transition: transform 1s;
 }
 
-.warning {
+.dialog {
   width: 481px;
   height: 314px;
   position: relative;
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background: #fff;
   box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04),
     0px 4px 16px rgba(51, 51, 51, 0.08);
   border-radius: 8px;
@@ -62,7 +63,10 @@ button {
   border: none;
   cursor: pointer;
 }
-
+.open-modals{
+  display: flex;
+  gap: 10px;
+}
 .action-buttons {
   display: flex;
   gap: 10px;
@@ -100,12 +104,16 @@ button {
 }
 
 /* Botones para abrir los modales */
-.open-button {
+.open-warning {
   background: orange;
 }
 
-.open-succes{
+.open-success{
   background: green;
+}
+
+.open-error{
+  background: red;
 }
 
 
@@ -120,4 +128,13 @@ button {
 }
 .cerrar-button{
   width: 145px;
+}
+/* Modal error */
+.error-container{
+  position: absolute;
+  transform: translate(250%, 0%);
+  transition: transform 1s;
+}
+.error-container.modal-active{
+  transform: translate(56%, 0%);
 }
